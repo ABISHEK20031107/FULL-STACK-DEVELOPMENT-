@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+<li>Car
+     <ul>
+        <li>Audi</li>
+        <li>BMW</li>
+        <li>Honda</li>
+        <li>Maruti Suzuki</li>
+        <li>Tata Nexon</li>
+        </ul>
+</li>
+<li>Bike
+        <ul>
+            <li>Royal Enfield </li>
+            <li>Splendor</li>
+            <li>Yamaha R15</li>
+            <li>Activa</li>
+            <li>Kawasaki Ninja</li>
+        </ul>
+</li>
+    </ul>
+</body>
+</html>
