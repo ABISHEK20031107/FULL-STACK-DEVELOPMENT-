@@ -46,10 +46,10 @@
     </td>
     <td>
         <label>Hobbies</label><br>
-        <input type="checkbox"> Music
-        <input type="checkbox"> Sports
+        <input type="checkbox"> Coding 
+        <input type="checkbox"> Driving 
         <input type="checkbox"> Travel
-        <input type="checkbox"> Movies
+        <input type="checkbox"> Playing 
       </td>
  </tr>
  <tr>
