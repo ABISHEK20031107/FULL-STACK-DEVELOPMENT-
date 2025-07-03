@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Form</title>
+</head>
+<body>
+<center><h2>Job Details:</h2></center> <hr>
+<form action="/submit" method="post">
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="Jobtitle"> Job Title:</label>
+  <input type="text" size="30" id="Jobtitle" name="Jobtitle" required><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="description">Description:</label>
+  &nbsp;&nbsp;&nbsp;<textarea id="description" name="description" rows="4" cols="30"></textarea><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  &emsp;&emsp;&emsp;Brief Description should have atmost 500 characters<br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="companyname">Company Name:</label>
+  <input type="text" id="companyname" name="companyname" size="30"><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="contactnumber">Contact number:</label>
+  <input type="text" id="contactnumber" name="contactnumber" size="30"><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="contactperson">Contact person:</label>
+  &nbsp;&nbsp;<input type="text" id="contactperson" name="contactperson" size="30"><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="email">Email:</label>
+  &emsp;<input type="email" id="email" name="email" size="30"><br><br>
+
+  &emsp;&emsp;&emsp; &emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+  <label for="workstatus">Work Status:</label>&nbsp;&nbsp;
+  <input type="checkbox" id="workstatus" name="status" value="Full Time"> Full Time&nbsp;
+  <input type="checkbox" id="workstatus" name="status" value="Part Time"> Part Time&nbsp;
+  <input type="checkbox" id="workstatus" name="status" value="Per Diem"> Per Dim&nbsp;
+  <input type="checkbox" id="workstatus" name="status" value="Others"> Others<br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+  <label for="salary">Salary:</label>&nbsp;&nbsp;
+  <input type="text" id="salary" name="salary">
+  <select name="salary" id="salary">
+    <option>US Dollar</option>
+     <option>10$</option>
+    <option>20$</option>
+  </select>
+  <select name="salary" id="salary">
+    <option>Yearly</option>
+    <option>2025</option>
+    <option>2026</option>  
+  </select><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+  <label for="experience">Experience(Years):</label>
+  &nbsp;&nbsp;<input type="number" id="experience" name="experience"><br><br>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+  <label for="location">Locations:</label>
+  &nbsp;&nbsp;&nbsp;<input type="text" id="location" name="location"><br><br>
+
+ &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+ <label for="qualification"> Qualifications:</label>&emsp;
+  <select id="qualification" name="qualification" size="4" multiple>
+    <option>Any</option>
+    <option>High School</option>
+    <option>Associate</option>
+    <option>Pre Bachelors</option>
+  </select>&nbsp;&nbsp;
+
+  <input type="button" value="ADD>>">&nbsp;
+  <input type="button" value="<<Remove">&nbsp;
+
+  <select size="4" multiple>
+    <option>Any</option>
+  </select><br><br><hr>
+
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+  <input type="submit" value="Submit">&nbsp;
+  <input type="reset" value="Reset">
+</form>
+</body>
+</html>
