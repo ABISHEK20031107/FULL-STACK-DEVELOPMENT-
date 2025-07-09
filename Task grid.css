@@ -1,0 +1,28 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+}
+
+.item1 { background-color: cadetblue; }
+.item2 { background-color: blue; }
+.item3 { background-color: burlywood; }
+.item4 { background-color: crimson; }
+.item5 { background-color: #FFC107; }
+.item6 { background-color: #4CAF50; }
+.item7 { background-color: bisque; }
+.item8 { background-color: aquamarine; }
+.item9 { background-color: aqua; }
