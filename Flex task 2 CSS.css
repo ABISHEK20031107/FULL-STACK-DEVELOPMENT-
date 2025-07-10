@@ -1,0 +1,23 @@
+.flex-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: stretch; 
+    height: 90vh;
+    gap: 20px; 
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #4CAF50;
+    flex: 1; 
+    min-width: 100px;
+    border-radius: 8px;
+}
+
+.main-content {
+    background-color: #2196F3; 
+      height: 10vh;
+     flex: 200; 
+    border-radius: 8px;
+}

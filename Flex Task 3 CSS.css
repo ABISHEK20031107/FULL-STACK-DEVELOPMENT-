@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px; 
+  gap: 40px; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.square {
+  width: 90px;
+  height: 90px;
+  border-radius: 8px;
+}
+
+.yellow {
+  background-color: rgb(229, 229, 3); 
+}
+
+.green {
+  background-color: rgb(5, 152, 5);
+}
