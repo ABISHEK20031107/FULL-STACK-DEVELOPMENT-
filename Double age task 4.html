@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Double Ages</title>
+</head>
+<body>
+
+<h2>Users over 50 after doubling age:</h2>
+<ul id="result"></ul>
+
+<script>
+  
+  const users = [
+    { name: "DEV", age: 30 },
+    { name: "MANI", age: 22 },
+    { name: "HARI", age: 26 },
+    { name: "NIKKIT", age: 25 }
+  ];
+
+  
+  const resultList = document.getElementById("result");
+
+  
+  users.forEach(user => {
+    const doubledAge = user.age * 2;
+    if (doubledAge > 50) {
+      
+      const li = document.createElement("li");
+      li.textContent = user.name;
+      resultList.appendChild(li);
+    }
+  });
+</script>
+
+</body>
+</html>

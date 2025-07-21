@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Capitalize Names</title>
+</head>
+<body>
+
+  <h2>Capitalized Names:</h2>
+  <ul id="nameList"></ul>
+
+  <script>
+    
+    const names = ["kavi", "sachin", "sibi", "kasi"];
+
+    
+    const capitalized = names.map(name => 
+      name.charAt(0).toUpperCase() + name.slice(1)
+    );
+
+    
+    const list = document.getElementById("nameList");
+    capitalized.forEach(name => {
+      const li = document.createElement("li");
+      li.textContent = name;
+      list.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
