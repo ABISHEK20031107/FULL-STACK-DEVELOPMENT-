@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array and String Methods</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    button { margin: 5px; padding: 10px; }
+    #output { margin-top: 20px; font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <h2>Array Methods</h2>
+  <button onclick="arrayPush()">Push</button>
+  <button onclick="arrayPop()">Pop</button>
+  <button onclick="arrayJoin()">Join</button>
+  <button onclick="arraySlice()">Slice</button>
+  <button onclick="arrayMap()">Map</button>
+
+  <h2>String Functions</h2>
+  <button onclick="stringToUpperCase()">To UpperCase</button>
+  <button onclick="stringToLowerCase()">To LowerCase</button>
+  <button onclick="stringSubstring()">Substring</button>
+  <button onclick="stringReplace()">Replace</button>
+  <button onclick="stringSplit()">Split</button>
+
+  <div id="output">Output will appear here.</div>
+
+  <script>
+    // Sample array and string
+    let fruits = ['apple', 'banana', 'cherry'];
+    let sentence = "Hello world from JavaScript!";
+
+    // Array methods
+    function arrayPush() {
+      fruits.push('orange');
+      document.getElementById("output").innerText = "Push: " + fruits;
+    }
+
+    function arrayPop() {
+      let removed = fruits.pop();
+      document.getElementById("output").innerText = "Pop: Removed " + removed + ", Now: " + fruits;
+    }
+
+    function arrayJoin() {
+      document.getElementById("output").innerText = "Join: " + fruits.join(' - ');
+    }
+
+    function arraySlice() {
+      let sliced = fruits.slice(1, 3);
+      document.getElementById("output").innerText = "Slice (1,3): " + sliced;
+    }
+
+    function arrayMap() {
+      let upper = fruits.map(fruit => fruit.toUpperCase());
+      document.getElementById("output").innerText = "Map to Uppercase: " + upper;
+    }
+
+    // String functions
+    function stringToUpperCase() {
+      document.getElementById("output").innerText = "ToUpperCase: " + sentence.toUpperCase();
+    }
+
+    function stringToLowerCase() {
+      document.getElementById("output").innerText = "ToLowerCase: " + sentence.toLowerCase();
+    }
+
+    function stringSubstring() {
+      document.getElementById("output").innerText = "Substring (6, 11): " + sentence.substring(6, 11);
+    }
+
+    function stringReplace() {
+      document.getElementById("output").innerText = "Replace 'world' with 'there': " + sentence.replace("world", "there");
+    }
+
+    function stringSplit() {
+      let words = sentence.split(" ");
+      document.getElementById("output").innerText = "Split by space: " + words;
+    }
+  </script>
+
+</body>
+</html>
