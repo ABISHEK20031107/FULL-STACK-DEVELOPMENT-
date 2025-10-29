@@ -8,9 +8,7 @@ import java.sql.Statement;
 
 public class JDBCUpdate {
 
-	
-	
-		static final String DB_URL="jdbc:mysql://localhost:3306/abi";//db-dbname
+	    static final String DB_URL="jdbc:mysql://localhost:3306/abi";//db-dbname
 		static final String USER="root";
 		static final String PASS="Abishek@2003";
 		
@@ -37,15 +35,9 @@ public class JDBCUpdate {
 				rs.close();
 			}
 			
-			
 			catch(SQLException ex)
 			{
 				System.out.println(ex);
 			}
-			
-			
-		
-
 	}
-
 }
